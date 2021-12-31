@@ -1,12 +1,149 @@
+/*A Design by Angel Revolledo
+Author: Angel Revolledo
+Author URL: http://angelrevolledo.com
+*/
+/*--Reset--*/
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-body{
-    width: 100%;
-    height: 500px;
-    border: 10px solid gray;
-    padding: 20px 35px;
+body, html {
+    height:100%;
+    overflow: hidden;
 }
+.logo{
+    margin: 0 auto;
+}
+
+.logo a{
+	background:url(../images/logo.png) no-repeat 0 0;
+	height:126px;
+	width:198px;
+	display:block;
+}
+.logo a:hover,
+.logo a:active{
+	background-position:0 -138px;
+}
+
+.colaboradores,.slogan{
+    text-align: center;
+}
+
+
+/*
+ * Off Canvas sidebar at medium breakpoint
+ * --------------------------------------------------
+ */
+ @media screen and (max-width: 1220px){
+    .logo,.slogan{
+        display: none;
+    }
+ }
+
+ @media screen and (max-width: 767px) {
+
+    .row-offcanvas {
+      position: relative;
+      -webkit-transition: all 0.25s ease-out;
+      -moz-transition: all 0.25s ease-out;
+      transition: all 0.25s ease-out;
+    }
+  
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -33%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 33%;
+      margin-left: -6px;
+    }
+  
+    .sidebar-offcanvas {
+      position: absolute;
+      top: 0;
+      width: 33%;
+      height: 100%;
+      overflow: auto;
+    }
+    .row-offcanvas-left
+    .sidebar-offcanvas {
+      left: -45%;
+    }
+  
+    .row-offcanvas-left.active {
+      left: 45%;
+      margin-left: -6px;
+    }
+    
+    .sidebar-offcanvas {
+      width: 45%;
+    }
+  }
+/* ----------------Widget--------------------------------*/
+.widget{
+    margin:0 0 18px 0;
+    background: #ffffff;
+}
+.widget ul{
+    list-style:none;
+}
+.widget li{
+    border-top:1px solid #ddd;
+}
+.widget li.active a:before{
+    content:"";
+    position:absolute;
+    top:13px;
+    left:5px;
+    z-index:2;
+    width:8px;
+    height:8px;
+    background:url(../images/rt-arrow.png) no-repeat;
+}
+.widget li:last-child{
+    border-bottom:1px solid #2d2d2d;
+}
+.widget li:first-child{
+    border-top:1px solid #2d2d2d;
+}
+.widget a{
+    position:relative;
+    display:block;
+    line-height:1.6em;
+    color:#7d7d7d;
+    padding:8px 20px;
+}
+.widget a:hover,.widget li.active a{
+    color:#0d6e9b;
+}
+/*--------------------Fin del Widget----------------------------*/
+  
+  
+  .card {
+      overflow:hidden;
+  }
+  
+  .card-body .rotate {
+      z-index: 8;
+      float: right;
+      height: 100%;
+  }
+  
+  .card-body .rotate i {
+      color: rgba(20, 20, 20, 0.15);
+      position: absolute;
+      left: 0;
+      left: auto;
+      right: -10px;
+      bottom: 0;
+      display: block;
+      -webkit-transform: rotate(-44deg);
+      -moz-transform: rotate(-44deg);
+      -o-transform: rotate(-44deg);
+      -ms-transform: rotate(-44deg);
+      transform: rotate(-44deg);
+  }
+
