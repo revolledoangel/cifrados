@@ -1,149 +1,292 @@
-/*A Design by Angel Revolledo
-Author: Angel Revolledo
-Author URL: http://angelrevolledo.com
+/*
+1. Posicionamiento
+2. Modelo de caja (box model)
+3. Tipografía
+4. Visuales
+5. Otros
 */
-/*--Reset--*/
+:root{
+    /*Colores*//*E63946 - F1FAEE - A8DADC - 457B9D - 1D3557*/
+    --background:#E5E5E5;
+    --rose: #E63946;
+    --dark-blue: #1D3557;
+    --soft-blue: #457B9D;
+    --secondary: #A8DADC;
+    --arena: #F1FAEE;
+	--linear-gradient:207.8deg, #201E1C 16.69%, #1D3557 100%;
+	--warm-black:#201E1C;
+	--black:#282623;
+	--gray:#BABABA;
+	--off-white:#FAF8F7;
+	--just-white:#FFFFFF;
+}
+
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
-body, html {
-    height:100%;
-    overflow: hidden;
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
 }
-.logo{
+
+/* --- HEADER --- */
+header{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 74px;
+    text-align: center;
+    background: var(--dark-blue);
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+header a{
+    cursor: pointer;
+}
+header span{
+    margin-left: 2rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    text-decoration: none;
+}
+header .logo{
+    flex: auto;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+    text-decoration: none;
+}
+/* --- MAIN --- */
+main{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+}
+
+.main--welcome{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 330px;
+    text-align: center;
+    background: linear-gradient(var(--linear-gradient));
+}
+.main--title-container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 8rem;
+    text-align: center;
+    align-self: center;
+}
+
+.main--welcome h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main--welcome p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-blue);
+}
+.main--title-container .main--button{
+    position: absolute;
+    top: 270px;
+    display: block;
+    top: calc(100% - 24px);
+	left: calc(50% - 114.5px);
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /* Sombra */
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+    cursor: pointer;
+    z-index: 4;
+}
+
+/* --- TUTORIAL --- */
+.main--tutorial{
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main--tutorial .bg-img{
+    width: 100%;
+    max-width: 900px;
+    height: 240px;
     margin: 0 auto;
+    margin-bottom: 30px;
+    background-image: url(/assets/imgs/cifrado.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat ;
+    opacity: 0.5;
+    z-index: 3;
+}
+.main--tutorial-content{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin:0 auto;
+    z-index: 3;
+}
+.main--tutorial-content h2{
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem ;
+    color: var(--black);
+}
+.main--tutorial-content p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+.main--tutorial .tutorial--button{
+    position: relative;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--rose);
+    /* Sombra */
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--just-white);
+    cursor: pointer;
+}
+/* --- DONATION --- */
+
+.main--donation{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--secondary);
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+
+}
+.main--donation-content{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin:0 auto;
+
 }
 
-.logo a{
-	background:url(../images/logo.png) no-repeat 0 0;
-	height:126px;
-	width:198px;
-	display:block;
-}
-.logo a:hover,
-.logo a:active{
-	background-position:0 -138px;
-}
+.main--donation h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem ;
+    color: var(--black);
 
-.colaboradores,.slogan{
+}
+.main--donation-content p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+.main--qr-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
     text-align: center;
 }
 
+.qr-yape img{
+    width: 85%;
+    max-width: 296px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.qr-plin img{
+    width: 85%;
+    max-width: 296px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.qr-paypal input{
+    width: 120px;
+    margin-bottom:30px ;
+}
+.main--donation p{
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
 
-/*
- * Off Canvas sidebar at medium breakpoint
- * --------------------------------------------------
- */
- @media screen and (max-width: 1220px){
-    .logo,.slogan{
-        display: none;
-    }
- }
-
- @media screen and (max-width: 767px) {
-
-    .row-offcanvas {
-      position: relative;
-      -webkit-transition: all 0.25s ease-out;
-      -moz-transition: all 0.25s ease-out;
-      transition: all 0.25s ease-out;
-    }
-  
-    .row-offcanvas-left
-    .sidebar-offcanvas {
-      left: -33%;
-    }
-  
-    .row-offcanvas-left.active {
-      left: 33%;
-      margin-left: -6px;
-    }
-  
-    .sidebar-offcanvas {
-      position: absolute;
-      top: 0;
-      width: 33%;
-      height: 100%;
-      overflow: auto;
-    }
-    .row-offcanvas-left
-    .sidebar-offcanvas {
-      left: -45%;
-    }
-  
-    .row-offcanvas-left.active {
-      left: 45%;
-      margin-left: -6px;
-    }
-    
-    .sidebar-offcanvas {
-      width: 45%;
-    }
-  }
-/* ----------------Widget--------------------------------*/
-.widget{
-    margin:0 0 18px 0;
-    background: #ffffff;
+/* --- FOOTER --- */
+footer{
+    background: var(--dark-blue);
+    padding: 15px 23px;
+    color: var(--just-white);
+    text-align: center;
+    font-size: 1.4rem;
 }
-.widget ul{
-    list-style:none;
+footer span a{
+    color: var(--rose);
+    text-decoration: none;
 }
-.widget li{
-    border-top:1px solid #ddd;
+footer span a:hover{
+    text-decoration: underline;
 }
-.widget li.active a:before{
-    content:"";
-    position:absolute;
-    top:13px;
-    left:5px;
-    z-index:2;
-    width:8px;
-    height:8px;
-    background:url(../images/rt-arrow.png) no-repeat;
-}
-.widget li:last-child{
-    border-bottom:1px solid #2d2d2d;
-}
-.widget li:first-child{
-    border-top:1px solid #2d2d2d;
-}
-.widget a{
-    position:relative;
-    display:block;
-    line-height:1.6em;
-    color:#7d7d7d;
-    padding:8px 20px;
-}
-.widget a:hover,.widget li.active a{
-    color:#0d6e9b;
-}
-/*--------------------Fin del Widget----------------------------*/
-  
-  
-  .card {
-      overflow:hidden;
-  }
-  
-  .card-body .rotate {
-      z-index: 8;
-      float: right;
-      height: 100%;
-  }
-  
-  .card-body .rotate i {
-      color: rgba(20, 20, 20, 0.15);
-      position: absolute;
-      left: 0;
-      left: auto;
-      right: -10px;
-      bottom: 0;
-      display: block;
-      -webkit-transform: rotate(-44deg);
-      -moz-transform: rotate(-44deg);
-      -o-transform: rotate(-44deg);
-      -ms-transform: rotate(-44deg);
-      transform: rotate(-44deg);
-  }
-

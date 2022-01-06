@@ -1,420 +1,94 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cifrados y Recursos Cristianos</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/c9ca96943f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-primary mb-3">
-        <div class="flex-row d-flex">
-            <button type="button" class="navbar-toggler mr-2 " data-toggle="offcanvas"
-                title="Toggle responsive left sidebar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#" title="El mejor lugar para músicos cristianos">Cifra2 Cristianos</a>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="collapsingNavbar">
-            <ul class=" navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="fab fa-facebook-f"></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="fab fa-twitter"></span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span class="fab fa-instagram""></span>
-                    </a>
-                </li>
-                <li class=" nav-item">
-                            <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">Acerca de esto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid" id="main">
-        <div class="mt-5 row row-offcanvas row-offcanvas-left vh-100">
-            <div class="d-flex flex-column col-md-3 col-lg-2 sidebar-offcanvas h-100 overflow-auto bg-light pl-0 "
-                id="sidebar" role="navigation">
-                <div class="pt-3 pb-3 logo">
-                    <a href="index.html" title="holi"></a>
-                </div>
-                <div class="slogan p-2">
-                    <q>Canten a él; sí, cántenle alabanzas; cuéntenle a todo el mundo acerca de sus obras
-                        maravillosas.</q> Salmos 105:2
-                </div>
-                <div class="p-2 colaboradores"><a href="#">Conoce a nuestros Colaboradores</a></div>
-                <div class="widget">
-                    <ul class="nav flex-column sticky-top pl-0 pt-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Danilo Montero</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Miel San Marcos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Planet Shaker</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#">Jesús Adrián Romero</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Analytics</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Export</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Snippets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Flexbox</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Layouts</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Templates</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Last Item</a></li>
-                    </ul>
-                </div>
+    <header class="navbar">
+        <a href="">
+            <span class="material-icons">
+                list
+            </span>
+        </a>
 
-            </div>
-            <!--/col-->
-            <main class="col main pt-2 mt-3 h-100 overflow-auto">
-                <h1 class="display-4 d-none d-sm-block">
-                    ¡Bienvenido a este lugar!
+        <a href="index.html" class="logo">
+            Cifrados Cristianos
+        </a>
+
+    </header>
+    <main>
+        <section class="main--welcome">
+            <div class="main--title-container">
+                <h1>
+                    La mejor comunidad de colaboración de recursos musicales
                 </h1>
-                <p class="lead d-none d-sm-block">Plus scrolling sidebar, based on Bootstrap 4</p>
-                <hr>
-                <h2>
-                    Qué encontrarás en este lugar...
-                </h2>
-                <p>Somos una comunidad de músicos cristianos que de forma gratuita compartimos muchos recursos usados en
-                    nuestras iglesias, y estos están verificados</p>
-                <div class="row placeholders mb-3">
-                    <div class="col-6 col-sm-3 placeholder text-center">
-                        <img src="//placehold.it/200/dddddd/fff?text=1" class="mx-auto img-fluid rounded-circle"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Cifrados</h4>
-                        <span class="text-muted">Cifrado americano</span>
-                    </div>
-                    <div class="col-6 col-sm-3 placeholder text-center">
-                        <img src="//placehold.it/200/e4e4e4/fff?text=2" class="mx-auto img-fluid rounded-circle"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Tutoriales</h4>
-                        <span class="text-muted">tutoriales de todos los instrumentos</span>
-                    </div>
-                    <div class="col-6 col-sm-3 placeholder text-center">
-                        <img src="//placehold.it/200/d6d6d6/fff?text=3" class="mx-auto img-fluid rounded-circle"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Multitracks</h4>
-                        <span class="text-muted">Trataremos de proveer los mejores multitracks</span>
-                    </div>
-                    <div class="col-6 col-sm-3 placeholder text-center">
-                        <img src="//placehold.it/200/e0e0e0/fff?text=4" class="center-block img-fluid rounded-circle"
-                            alt="Generic placeholder thumbnail">
-                        <h4>Partituras</h4>
-                        <span class="text-muted">Increíbles partituras originales y transcripciones</span>
-                    </div>
+                <p>
+                    Nos alegra tenerte aquí, estamos subiendo aportes todo el tiempo. Nos encantan los cifrados 💕🎵
+                </p>
+                <a href="" class="main--button">Conoce Nuestro Equipo</a>
+            </div>
+        </section>
 
+        <section class="main--tutorial">
+            <div class="bg-img"></div>
+            <div class="main--tutorial-content">
+                <h2>¿Qué es un cifrado americano?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab corporis, harum suscipit nobis delectus
+                    eaque facere rerum exercitationem accusantium perspiciatis accusamus eum aspernatur. Nam, quo
+                    numquam. Veritatis ea ad quae.</p>
+            </div>
+            <a href="" class="tutorial--button">Aprender más</a>
+        </section>
+
+        <section class="main--donation">
+            <div class="main--donation-content">
+                <h2>Formas de Donar <span class="material-icons">volunteer_activism</span> </h2>
+
+                <p>Este sitio es totalmente gratis <span style="font-weight: bold; color: var(--black)">y lo seguirá
+                        siendo</span>, aquí compartiremos muchos recursos
+                    musicales tales como charts, videos tutoriales, partituras y mucho más...!</p>
+                <p>Ayúdanos a poder solventar este proyecto con una donación mediante alguna de estas formas</p>
+            </div>
+            <div class="main--qr-content">
+                <div class="qr-yape">
+                    <img src="./assets/imgs/yape.PNG" alt="">
                 </div>
-                <hr>
-                <h2>
-                    Cómo poder donar...
-                </h2>
-                <p>Este es un lugar totalmente gratis, y queremos que siga siéndolo, ayúdanos a mantenerlo así con una
-                    donación... Aquí te explicamos cómo</p>
-                <hr>
-                <h2>
-                    Últimas Publicaciones
-                </h2>
-                <p>Checa nuestros últimos aportes!</p>
-                <div class="row mb-3">
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card bg-success text-white h-100">
-                            <div class="card-body bg-success">
-                                <div class="rotate">
-                                    <i class="fa fa-user fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Users</h6>
-                                <h1 class="display-4">134</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-danger h-100">
-                            <div class="card-body bg-danger">
-                                <div class="rotate">
-                                    <i class="fa fa-list fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Posts</h6>
-                                <h1 class="display-4">87</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-info h-100">
-                            <div class="card-body bg-info">
-                                <div class="rotate">
-                                    <i class="fa fa-twitter fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Tweets</h6>
-                                <h1 class="display-4">125</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-sm-6 py-2">
-                        <div class="card text-white bg-warning h-100">
-                            <div class="card-body">
-                                <div class="rotate">
-                                    <i class="fa fa-share fa-4x"></i>
-                                </div>
-                                <h6 class="text-uppercase">Shares</h6>
-                                <h1 class="display-4">36</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/row-->
-
-                <hr>
-                <h2>
-                    Últimas Publicaciones
-                </h2>
-                <p>Checa nuestros últimos aportes!</p>
-
-                <!--/.container-->
-                <footer class="container-fluid">
-                    <p class="text-right small">©2021 Angel Revolledo</p>
-                </footer>
-
-                <hr>
-                <hr>
-                <hr>
-
-
-            </main>
-            <!--/main col-->
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Modal</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                        <span class="sr-only">Close</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>This is a dashboard layout for Bootstrap 4. This is an example of the Modal component which you
-                        can use to show content.
-                        Any content can be placed inside the modal and it can use the Bootstrap grid classes.</p>
-                    <p>
-                        <a href="https://www.codeply.com/go/KrUO8QpyXP" target="_ext">Grab the code at Codeply</a>
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary-outline" data-dismiss="modal">OK</button>
+                <div class="qr-plin">
+                    <img src="./assets/imgs/plin.PNG" alt="">
                 </div>
             </div>
-        </div>
-    </div>
+            <h2>Donar mendiante paypal:</h2>
+
+            <form class="qr-paypal" action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="6VCCZH3RY2BRE" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
+                    name="submit" title="PayPal - The safer, easier way to pay online!"
+                    alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_PE/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+
+            <p> también podrás donar y contactarte con nuestros <a href=""> nuestros colaboradores</a></p>
+
+        </section>
+        
+    </main>
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://angelrevolledo.com">Angel Revolledo</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+    </footer>
+
 </body>
-<script src="js/js.js"></script>
 
 </html>
