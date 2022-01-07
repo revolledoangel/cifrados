@@ -32,6 +32,7 @@ html{
     font-family: 'DM Sans', sans-serif;
 }
 
+
 /* --- HEADER --- */
 header{
     position: relative;
@@ -48,7 +49,7 @@ header{
 .navbar{
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 1;
     transition: all 0.3s ease;
 }
 
@@ -376,4 +377,42 @@ footer span a{
 }
 footer span a:hover{
     text-decoration: underline;
+}
+
+/* --- Bread Crumb --- */
+.bread-crumbs-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align:start;
+    background: var(--secondary);
+    padding-top: 74px;
+}
+.breadcrumbs{
+    padding: 10px;
+}
+.breadcrumbs__item{
+    display: inline-block;
+}
+.breadcrumbs__item:not(:last-of-type)::after{
+    content: '\203a';
+    margin: 0 5px;
+    color: var(--warm-black);
+}
+.breadcrumbs__link{
+    text-decoration: none;
+    color: var(--warm-black);
+    font-size: 1.4rem;
+}
+.breadcrumbs__link:hover{
+    text-decoration: underline;
+}
+.breadcrumbs__link--active{
+    color: var(--rose);
+    font-weight: 500;
+
 }
