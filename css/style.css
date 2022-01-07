@@ -65,12 +65,99 @@ header span{
 }
 header .logo{
     flex: auto;
+    
+   
+}
+header .logo a{
+    padding: 0;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--just-white);
     text-decoration: none;
 }
+/* --- Estilos del menú --- */
+.icono-menu{
+    z-index: 10;
+    cursor: pointer;
+}
+.icono-menu span{
+    color: var(--just-white);
+}
+
+.content-menu{
+    background-color: var(--dark-blue);
+    opacity: 0.9;
+    box-shadow: 2px 0 5px 2px rgb(66, 66, 66);
+    width: 225px;
+    height: calc(100vh - 74px);
+    position: absolute;
+    top: 74px;
+    left: 0;
+    transition: all .5s ease;
+    overflow-y: scroll;
+}
+
+/* --- Estilos para agregar en JS --- */
+.active{
+    transform: translate(-600px);
+}
+
+.opacity{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease;
+}
+
+/* --- Estilos para el listado del menú --- */
+
+
+/* -- Estilos del widget --- */
+
+.widget{
+    font-size:12px;
+    margin:0px 0 18px 0;
+    background: var(--just-white);
+    overflow:hidden;
+}
+.widget ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.widget li{
+    font-family: 'Inter';
+    border-top:1px solid var(--gray);
+    margin:0;
+    padding:0;
+}
+.widget li .active a:before{
+    content:"";
+    position:absolute;
+    top:13px;
+    left:0px;
+    z-index:5;
+    width:8px;
+    height:8px;
+    background:url(/assets/icons/rt-arrow.png) no-repeat;
+}
+.widget li:last-child{
+    border-bottom:1px solid #2d2d2d;
+}
+.widget li:first-child{
+    border-top:1px solid #2d2d2d;
+}
+.widget a{
+    position:relative;
+    display:block;
+    line-height:1.6rem;
+    color:var(--dark-blue);
+    padding:8px 10px;
+}
+.widget a:hover,
+.widget li.active a{
+    color: var(--rose);
+}
+
 /* --- MAIN --- */
 main{
     width: 100%;
@@ -94,7 +181,7 @@ main{
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 8rem;
+    margin-top: 12rem;
     text-align: center;
     align-self: center;
 }
@@ -121,7 +208,7 @@ main{
     padding: 15px;
     width: 229px;
     height: 48px;
-    background-color: var(--off-white);
+    background-color: var(--just-white);
     /* Sombra */
     box-shadow: 0 4px 8px rgba(89,73,30,0.16);
     border: none;
