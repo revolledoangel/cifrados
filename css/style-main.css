@@ -1,0 +1,260 @@
+:root{
+    /*Colores*//*E63946 - F1FAEE - A8DADC - 457B9D - 1D3557*/
+    --background:#E5E5E5;
+    --rose: #E63946;
+    --dark-blue: #1D3557;
+    --soft-blue: #457B9D;
+    --secondary: #A8DADC;
+    --arena: #F1FAEE;
+	--linear-gradient:207.8deg, #201E1C 16.69%, #1D3557 100%;
+	--warm-black:#201E1C;
+	--black:#282623;
+	--gray:#BABABA;
+	--off-white:#FAF8F7;
+	--just-white:#FFFFFF;
+}
+body{
+    font-family: 'DM Sans', sans-serif;
+}
+/* --- HEADER --- */
+.navbar{
+    background-color: var(--dark-blue);
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* -- Menú de artistas -- */
+.widget{
+    font-size: 12px;
+    padding-bottom: 5px;
+    background: var(--just-white);
+    overflow:hidden;
+    border-right: 1px solid var(--gray);
+}
+.widget ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.widget li{
+    font-family: 'Inter';
+    border-top:1px solid var(--gray);
+    margin:0;
+    padding:0;
+}
+
+.widget li:last-child{
+    border-bottom:1px solid #2d2d2d;
+}
+.widget li:first-child{
+    border-top:1px solid #2d2d2d;
+}
+.widget a{
+    position:relative;
+    display:block;
+    line-height:1.6rem;
+    font-size: 14px;
+    color:var(--dark-blue);
+    padding:8px 10px;
+}
+.widget a:hover,
+.widget li.active a{
+    color: var(--rose);
+}
+/* --- Section 1 --*/
+.main{
+    padding-top: 62px;
+}
+.col{
+    padding-left: 0;
+    padding-right: 0;
+}
+.welcome{
+    padding: 40px 15px;
+    min-width: 290px;
+    height: auto;
+
+    background: linear-gradient(var(--linear-gradient));
+}
+.welcome-content{
+    width: 90%;
+    min-width: 288px;
+    max-width: 600px;
+    margin:0 auto;
+}
+.welcome h1{
+    
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    color: var(--just-white);
+}
+.welcome p{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: var(--soft-blue);
+}
+
+/* --- TUTORIAL --- */
+.main--tutorial{
+    position:relative;
+	background: url('/assets/imgs/cifrado.png') no-repeat fixed ;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 500px;
+    
+}
+
+
+.main--tutorial-content{
+    width: 90%;
+    min-width: 288px;
+    max-width: 600px;
+    margin:0 auto;
+    
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main--tutorial-content h2{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 26px ;
+    color: var(--black);
+   
+}
+.main--tutorial-content p{
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+.tutorial--button{
+    position: relative;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--rose);
+    /* Sombra */
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--just-white);
+    cursor: pointer;
+}
+
+/* --- DONATION --- */
+
+.main--donation{
+    width: 100%;
+    height: auto;
+    
+    text-align: center;
+    
+    
+
+}
+.main--donation-content{
+    width: 90%;
+    min-width: 288px;
+    max-width: 600px;
+    margin:0 auto;
+
+}
+
+.main--donation h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px ;
+    color: var(--black);
+
+}
+.main--donation-content p{
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #757575;
+}
+.main--qr-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+}
+
+.qr-yape img{
+    width: 85%;
+    max-width: 296px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.qr-plin img{
+    width: 85%;
+    max-width: 296px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+}
+.qr-paypal input{
+    width: 120px;
+    margin-bottom:30px ;
+}
+.main--donation p{
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+
+
+/*--- FOOTER ---*/
+footer{
+    background: var(--dark-blue);
+    padding: 15px 23px;
+    color: var(--just-white);
+    text-align: center;
+    font-size: 16px;
+}
+footer span a{
+    color: var(--rose);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
