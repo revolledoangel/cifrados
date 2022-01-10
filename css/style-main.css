@@ -1,6 +1,6 @@
 :root{
     /*Colores*//*E63946 - F1FAEE - A8DADC - 457B9D - 1D3557*/
-    --background:#E5E5E5;
+    --background:#d7e2e3;
     --rose: #E63946;
     --dark-blue: #1D3557;
     --soft-blue: #457B9D;
@@ -15,10 +15,18 @@
 }
 body{
     font-family: 'DM Sans', sans-serif;
+    background: #090e11
+
 }
 /* --- HEADER --- */
 .navbar{
     background-color: var(--dark-blue);
+    max-width: 1396px;
+    margin: 0 auto;
+}
+#main{
+    max-width: 1396px;
+    margin: 0 auto;
 }
 .navbar-brand{
     font-weight: bold;
@@ -29,9 +37,10 @@ body{
 .widget{
     font-size: 12px;
     padding-bottom: 5px;
-    background: var(--just-white);
+    background: #131c21;
     overflow:hidden;
-    border-right: 1px solid var(--gray);
+    padding-bottom: 50px;
+
 }
 .widget ul{
     list-style:none;
@@ -40,42 +49,50 @@ body{
 }
 .widget li{
     font-family: 'Inter';
-    border-top:1px solid var(--gray);
+    border-top:1px solid var(--background);
     margin:0;
     padding:0;
 }
 
 .widget li:last-child{
-    border-bottom:1px solid #2d2d2d;
+    border-bottom:2px solid var(--background);
 }
 .widget li:first-child{
-    border-top:1px solid #2d2d2d;
+    border-top:2px solid var(--background);
 }
 .widget a{
     position:relative;
     display:block;
     line-height:1.6rem;
-    font-size: 14px;
-    color:var(--dark-blue);
+    font-size: 18px;
+    color: var(--background);
     padding:8px 10px;
+    
 }
 .widget a:hover,
 .widget li.active a{
     color: var(--rose);
 }
+.widget::-webkit-scrollbar{
+    width: 7px;
+}
+.widget::-webkit-scrollbar-thumb{
+    background-color: var(--arena);
+    border-radius: 10px;
+}
+
 /* --- Section 1 --*/
 .main{
     padding-top: 62px;
+    
 }
 .col{
     padding-left: 0;
     padding-right: 0;
 }
 .welcome{
-    padding: 40px 15px;
+    padding: 80px 15px;
     min-width: 290px;
-    height: auto;
-
     background: linear-gradient(var(--linear-gradient));
 }
 .welcome-content{
@@ -90,6 +107,7 @@ body{
     font-weight: bold;
     line-height: 24px;
     color: var(--just-white);
+    padding: 20px;
 }
 .welcome p{
     margin-top: 25px;
@@ -97,11 +115,13 @@ body{
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
-    color: var(--soft-blue);
+    color: var(--just-white);
 }
+
 
 /* --- TUTORIAL --- */
 .main--tutorial{
+    
     position:relative;
 	background: url('/assets/imgs/cifrado.png') no-repeat fixed ;
 	background-position: center center;
@@ -110,6 +130,7 @@ body{
 	-o-background-size: cover;
 	background-size: cover;
 	min-height: 500px;
+    background-color: var(--just-white);
     
 }
 
@@ -144,31 +165,34 @@ body{
 }
 .tutorial--button{
     position: relative;
-    padding: 15px;
-    width: 229px;
+    padding: 15px 0;
+    width: 300px;
     height: 48px;
     background-color: var(--rose);
+    margin: 0 auto;
     /* Sombra */
     box-shadow: 0 4px 8px rgba(89,73,30,0.16);
     border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.tutorial--button a{
+    color: var(--just-white);
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: var(--just-white);
-    cursor: pointer;
 }
 
 /* --- DONATION --- */
 
 .main--donation{
+    display: inline-block;
     width: 100%;
     height: auto;
-    
     text-align: center;
-    
-    
-
+    background-color: var(--secondary);
+    padding: 40px 0;
+   
 }
 .main--donation-content{
     width: 90%;
@@ -250,6 +274,7 @@ footer{
     color: var(--just-white);
     text-align: center;
     font-size: 16px;
+    padding: 50px;
 }
 footer span a{
     color: var(--rose);

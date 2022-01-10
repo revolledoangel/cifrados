@@ -7,6 +7,11 @@ body, html {
  * Off Canvas sidebar at medium breakpoint
  * --------------------------------------------------
  */
+ @media screen and (min-width: 991px) {
+  
+
+ }
+
 @media screen and (max-width: 991px) {
 
   .row-offcanvas {
@@ -18,18 +23,18 @@ body, html {
 
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -33%;
+    left: -25%;
   }
 
   .row-offcanvas-left.active {
-    left: 33%;
+    left: 25%;
     margin-left: -6px;
   }
 
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
-    width: 33%;
+    width: 25%;
     height: 100%;
     overflow: auto;
   }
@@ -39,19 +44,19 @@ body, html {
  * Off Canvas wider at sm breakpoint
  * --------------------------------------------------
  */
-@media screen and (max-width: 34em) {
+@media screen and (max-width: 570px) {
   .row-offcanvas-left
   .sidebar-offcanvas {
-    left: -45%;
+    left: -70%;
   }
 
   .row-offcanvas-left.active {
-    left: 45%;
-    margin-left: -6px;
+    left: 70%;
+    margin-left: -1px;
   }
   
   .sidebar-offcanvas {
-    width: 45%;
+    width: 70%;
   }
   
   .redes{
@@ -61,10 +66,14 @@ body, html {
   .profile p{
     display: none;
   }
+  .profile img{
+      width: 80px;
+  }
 }
 
-.card {
+.card-lista {
     overflow:hidden;
+    cursor: pointer;
 }
 
 .card-body .rotate {

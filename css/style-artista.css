@@ -1,3 +1,7 @@
+/* Main */
+.main{
+    background-color: var(--background);
+}
 /* --- Bread Crumb --- */
 .bread-crumbs-section{
     position: relative;
@@ -12,6 +16,7 @@
     position: fixed;
     z-index: 1;
     
+    
 }
 .breadcrumbs{
     padding: 10px;
@@ -19,6 +24,10 @@
 }
 ul{
     margin-bottom:0 ;
+    
+}
+h4{
+    font-size: 20px;
 }
 .breadcrumbs__item{
     display: inline-block;
@@ -42,6 +51,13 @@ ul{
 
 }
 
+
+@media (min-width: 1396px) {
+    .bread-crumbs-section{
+        width: 1163.34px;
+    }
+  }
+
 /* -- Profiles -- */
 .profile{
     margin-top: 68px;
@@ -52,7 +68,7 @@ ul{
     
 }
 .profile-content{
-    text-align: justify;
+    text-align: start;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -91,6 +107,8 @@ ul{
     grid-auto-rows: auto;
     gap: 20px;   
     z-index: 1;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 .card{
     border: 1px solid var(--warm-black);
@@ -101,6 +119,7 @@ ul{
 .card:hover{
     transform: translateY(-3%);
     box-shadow:  0 4px 8px var(--dark-blue);
+    text-decoration: none;
 }
 
 .card__image {
@@ -116,7 +135,8 @@ ul{
     font-size: 14px;
     padding: 15px;
     background-color: var(--just-white);
-    
+    color: var(--dark-blue);
+
 }
 
 .card__content > p:first-of-type {
@@ -125,4 +145,38 @@ ul{
 
 .card__content > p:last-of-type {
     margin-bottom: 0;
+}
+
+.colaboradores h4{
+    font-size: 20px;
+}
+.colaboradores div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* --- Lista de canciones --- */
+
+.lista-canciones{
+    margin: 20px;
+    color: var(--dark-blue);
+    box-shadow:0 4px 8px rgba(89,73,30,0.16);
+}
+.card-header{
+    background-color: var(--background);
+    font-weight: bold;
+}
+.card-block{
+    background-color: var(--just-white);
+    padding: 10px;
+}
+.recurso{
+    padding: 10px;
+    margin-bottom: 5px ;
+    border: 1px solid var(--dark-blue);
+}
+.recurso a{
+    color: var(--rose);
+    text-decoration: underline;
 }
